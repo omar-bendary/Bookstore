@@ -48,6 +48,7 @@ INSTALLED_APPS = [
     # local
     'users.apps.UsersConfig',  # users
     'pages.apps.PagesConfig',  # pages
+    'books.apps.BooksConfig',  # books
 ]
 
 
@@ -168,3 +169,6 @@ CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 
 SECRET_KEY = os.environ.get('SECRET_KEY')
+
+
+DEFAULT_FROM_EMAIL = 'admin@djangobookstore.com'
